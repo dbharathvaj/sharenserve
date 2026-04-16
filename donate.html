@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food | Share & Serve</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="logo">share&<span>serve</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="donate.html" class="active-link">Donate Food</a>
+            <a href="find-donations.html">Find Donations</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="nav-buttons">
+            <a href="ngo-login.html" class="login">NGO Login</a>
+            <a href="donate.html" class="btn-primary">Donate Now</a>
+        </div>
+    </header>
+
+    <section class="subpage">
+        <div class="section-hero">
+            <p class="section-label">Share Food, Share Care</p>
+            <h1>Donate Surplus Food</h1>
+            <p>Help reduce food waste by sharing excess food with NGOs and volunteers near you.</p>
+        </div>
+
+        <div class="form-container">
+            <h2>Donate Surplus Food</h2>
+            <p class="subtitle">Help reduce food waste by sharing excess food</p>
+
+            <form id="donation-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="donor-name">Your Name / Organization</label>
+                        <input id="donor-name" name="name" type="text" placeholder="John's Restaurant">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-type">Donor Type</label>
+                        <select id="donor-type" name="donorType">
+                            <option value="">Select type</option>
+                            <option>Restaurant</option>
+                            <option>Hotel</option>
+                            <option>Individual</option>
+                            <option>Event</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donor-contact">Contact Number</label>
+                        <input id="donor-contact" name="contact" type="tel" placeholder="9876543210">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="food-type">Food Type</label>
+                        <select id="food-type" name="foodType">
+                            <option value="">Select food type</option>
+                            <option>Vegetarian</option>
+                            <option>Non-Vegetarian</option>
+                            <option>Mixed</option>
+                            <option>Packaged</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity (Servings)</label>
+                        <input id="quantity" name="quantity" type="text" placeholder="e.g., 50 meals">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="best-before">Best Before (Hours)</label>
+                        <select id="best-before" name="bestBefore">
+                            <option value="">Select time</option>
+                            <option>2 Hours</option>
+                            <option>4 Hours</option>
+                            <option>6 Hours</option>
+                            <option>12 Hours</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="pickup-address">Pickup Address</label>
+                        <input id="pickup-address" name="address" type="text" placeholder="123 Main Street, City, State">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="additional-details">Additional Details (Optional)</label>
+                        <textarea id="additional-details" name="details" placeholder="Any special instructions..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Donation</button>
+                <p class="inline-message" id="donation-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Share&serve. All rights reserved. Made with care for humanity.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
